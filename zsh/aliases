@@ -17,6 +17,7 @@ alias grc='git rebase --continue'
 alias gs='git status'
 alias gu='git pull'
 alias gh1='gh 1'
+alias ghm='gf && git reset --hard origin/main'
 
 alias start='yarn start'
 alias test='yarn test'
