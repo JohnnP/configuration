@@ -16,8 +16,10 @@ alias gra='git rebase --abort'
 alias grc='git rebase --continue'
 alias gs='git status'
 alias gu='git pull'
-alias gh1='gh 1'
+alias gh1='gitRH 1'
 alias ghm='gf && git reset --hard origin/main'
+
+alias gprw='gh pr view --web'
 
 alias start='yarn start'
 alias test='yarn test'
@@ -27,7 +29,9 @@ alias stop='docker-compose stop'
 alias rs='yarn start'
 alias ss='bundle exec sidekiq'
 
-alias back='cd /Users/jonathanpujol/project/backend'
-alias dash='cd /Users/jonathanpujol/project/dashboard'
+alias back='cd /Users/jonathan/project/backend'
+alias dash='cd /Users/jonathan/project/dashboard'
 
 alias deploy='~/deployd.sh'
+
+alias rbc="git diff HEAD~1 --diff-filter=MAR --name-only '**/*.jbuilder' '**/*.rb' '**/*.rake' Gemfile | xargs bundle exec rubocop -A --force-exclusion"
